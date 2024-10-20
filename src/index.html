@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Planning Hub</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Event Planning Hub</h1>
+        <button id="signupBtn">Sign Up</button>
+      </div>
+    </header>
+    <main>
+      <section id="search">
+        <input
+          type="text"
+          id="eventSearch"
+          placeholder="Search for vendors, venues..."
+        />
+        <button id="searchBtn">Search</button>
+      </section>
+      <section id="eventTasks">
+        <h2>Your Event Tasks</h2>
+        <ul id="taskList">
+          <!-- Task items will be dynamically added here -->
+        </ul>
+      </section>
+      <section id="vendorInfo">
+        <h2>Available Vendors</h2>
+        <div id="vendorList">
+          <!-- Vendor information will be populated here -->
+        </div>
+      </section>
+      <section id="budgetTracker">
+        <h2>Budget Tracker</h2>
+        <form id="budgetForm">
+          <input type="text" placeholder="Category" id="category" />
+          <input type="number" placeholder="Amount" id="amount" />
+          <button type="submit">Add</button>
+        </form>
+        <div id="budgetList">
+          <!-- Budget items will be displayed here -->
+        </div>
+      </section>
+      <section id="guestList">
+        <h2>Guest List</h2>
+        <form id="guestForm">
+          <input type="text" placeholder="Guest Name" id="guestName" />
+          <button type="submit">Add Guest</button>
+        </form>
+        <ul id="guests">
+          <!-- Guest names will be displayed here -->
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Event Planning Hub</p>
+    </footer>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
